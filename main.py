@@ -27,7 +27,7 @@ birthday_person = user["name"].values[0]
 
 # Reading the letters
 random_int = random.randint(1, 3)
-with open(f"letter_templates/letter_{random_int}.txt") as file:
+with open(f"letter_{random_int}.txt") as file:
     read_file = file.read()
     ready_email = read_file.replace("[NAME]", birthday_person)
 # sending the Email
